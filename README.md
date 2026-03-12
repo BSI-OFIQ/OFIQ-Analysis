@@ -21,6 +21,10 @@ python DV-OFIQ-stats-with-violinplots.py --input_csv INPUT_CSV --variable VARIAB
 ## Example calls
 
 - python DV-OFIQ-stats-with-violinplots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260217.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
+<p align="center"> 
+<img src="UnifiedQualityScore.scalar_violin.gender_lwmdd_0.151.png" width="50%">
+</p>
+
 - python DV-OFIQ-stats-with-violinplots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
 - python DV-OFIQ-stats-with-violinplots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.scalar --color true --output_folder results
 
