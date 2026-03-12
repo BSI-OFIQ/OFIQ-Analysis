@@ -18,7 +18,7 @@ Note: In order to process the CSV file with quality measures, the header of the 
 
 python DV-OFIQ-stats-with-violinplots.py --input_csv INPUT_CSV --variable VARIABLE --measure MEASURE --color COLOR --output_folder OUTPUT_FOLDER
 
-## Example calls
+## Example calls and results
 
 - python DV-OFIQ-stats-with-violinplots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260217.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
 <p align="center"> 
