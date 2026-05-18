@@ -12,7 +12,7 @@ Example data files can be found in the subfolder data.
 
 ## Getting started
 
-Note: In order to process the CSV file with quality measures, the header of the CSV must follow the convention of OFIQ 1.1.3 containing the suffix .native and .scalar. In order to get started with older CSV-files you can copy the new header from the file corr-lables.scv in the subfolder data.
+Note: In order to process the CSV file with quality measures, the header of the CSV must follow the convention of OFIQ 1.2.0 containing the suffix .native and .scalar. In order to get started with older CSV-files you can copy the new header from the file corr-lables.scv in the subfolder data.
 
 ## Usage: 
 
