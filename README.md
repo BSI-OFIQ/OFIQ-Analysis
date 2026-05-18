@@ -24,15 +24,24 @@ python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --m
 <p align="center"> 
 <img src="data/UnifiedQualityScore.scalar_violin.gender_lwmdd_0.151.png" width="50%">
 </p>
+<p align="center"> 
+<img src="data/UnifiedQualityScore.scalar_cumulative.gender_mdgdd_0.190.png" width="50%">
+</p>
 
 - python DV-OFIQ-stats-with-plots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
 <p align="center"> 
 <img src="data/LuminanceMean.scalar_violin.glasses_lwmdd_0.009.png" width="50%">
 </p>
+<p align="center"> 
+<img src="data/LuminanceMean.scalar_cumulative.glasses_mdgdd_0.114.png" width="50%">
+</p>
 
 - python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.scalar --color true --output_folder results
 <p align="center"> 
 <img src="data/UnifiedQualityScore.scalar_violin.skintone_lwmdd_0.075.png" width="50%">
+</p>
+<p align="center"> 
+<img src="data/UnifiedQualityScore.scalar_cumulative.skintone_mdgdd_0.302.png" width="50%">
 </p>
 
 ## Violin plots and cumulative distribution plots
