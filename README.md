@@ -1,8 +1,8 @@
 # OFIQ-Analysis on Demographic Variability 
 
-This script creates violinplots for quality measures defined in ISO/IEC 29794-5 [1] and investigates the demographic variability (DV) across different demographic groups. The DV is measured with the low weighted mean (LWM-DD) as demographic differential metric. Moreover the script computes quality measure thresholds for all quality components according to the percentiles of the data.
+This script creates violinplots for quality measures defined in ISO/IEC 29794-5 [1] and investigates the demographic variability (DV) across different demographic groups. The DV is measured with the mean discard gap (MDG-DD) and the low weighted mean (LWM-DD) as demographic differential metrics. Moreover the script computes quality measure thresholds for all quality components according to the percentiles of the data.
 
-The immediate purpose of the script is to produce violinplots, LWM-DD values and threshold tables for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [3].
+The immediate purpose of the script is to produce violinplots including associated LWM-DD values, cumulative distribution plots inclduding associated MDG-DD and threshold tables for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [3].
 
 This script will be contributed to ISO/IEC 29794-1 and will eventually become part of that standard.
 
@@ -16,28 +16,28 @@ Note: In order to process the CSV file with quality measures, the header of the 
 
 ## Usage: 
 
-python DV-OFIQ-stats-with-violinplots.py --input_csv INPUT_CSV --variable VARIABLE --measure MEASURE --color COLOR --output_folder OUTPUT_FOLDER
+python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --measure MEASURE --color COLOR --output_folder OUTPUT_FOLDER
 
 ## Example calls and results
 
-- python DV-OFIQ-stats-with-violinplots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260217.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260217.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
 <p align="center"> 
 <img src="data/UnifiedQualityScore.scalar_violin.gender_lwmdd_0.151.png" width="50%">
 </p>
 
-- python DV-OFIQ-stats-with-violinplots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
 <p align="center"> 
 <img src="data/LuminanceMean.scalar_violin.glasses_lwmdd_0.009.png" width="50%">
 </p>
 
-- python DV-OFIQ-stats-with-violinplots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.scalar --color true --output_folder results
 <p align="center"> 
 <img src="data/UnifiedQualityScore.scalar_violin.skintone_lwmdd_0.075.png" width="50%">
 </p>
 
-## Violin plots
+## Violin plots and cumulative distribution plots
 
-Violin plots are created following the methodology defined in ISO/IEC 29794-1:202x [3]. 
+Violin plots and cumulative distribution plots are created following the methodology defined in ISO/IEC 29794-1:202x [3]. 
 
 ## Threshold tables
 
@@ -45,7 +45,7 @@ For *all* quality‑measure columns the five operational thresholds (0.1 %, 1�
 
 ## Demographic differential
 
-As metric to assess the demographic differential (i.e. the "extent of difference in outcome of a biometric system across socially recognized sectors of the population"), which has been defined in ISO/IEC 2382-37 [5] the script computes the Low-Weighted-Mean-Demographic-Differential (LWM-DD) score with a lower is better semantic. The LWM-DD follows the approach from Doersch et al. [6].
+As metric to assess the demographic differential (i.e. the "extent of difference in outcome of a biometric system across socially recognized sectors of the population"), which has been defined in ISO/IEC 2382-37 [5] the script computes the Mean Discard Gap Demographic Differential (MDG-DD) as well as the Low Weighted Mean Demographic Differential (LWM-DD) score both with a lower is better semantic. The MDG-DD quantifies the gap between the cumulative distribution plots. The LWM-DD follows the approach from Doersch et al. [6].
 
 ## References
 
