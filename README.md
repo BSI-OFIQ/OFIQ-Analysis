@@ -2,7 +2,7 @@
 
 This script creates violinplots for quality measures defined in ISO/IEC 29794-5 [1] and investigates the demographic variability (DV) across different demographic groups. The DV is measured with the mean discard gap (MDG-DD) and the low weighted mean (LWM-DD) as demographic differential metrics. Moreover the script computes quality measure thresholds for all quality components according to the percentiles of the data.
 
-The immediate purpose of the script is to produce violinplots including associated LWM-DD values, cumulative distribution plots inclduding associated MDG-DD and threshold tables for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [3].
+The immediate purpose of the script is to produce violinplots including associated LWM-DD values, cumulative distribution plots including associated MDG-DD and threshold tables for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [3].
 
 This script will be contributed to ISO/IEC 29794-1 and will eventually become part of that standard.
 
