@@ -36,12 +36,12 @@ python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --m
 <img src="data/Multi-PIE-glasses-corr-lables-260723_LuminanceMean.mapped_cumulative.glasses_mdgdd_0.047.png" width="50%">
 </p>
 
-- python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.mapped --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260723.csv --variable skintone --measure UnifiedQualityScore.mapped --color true --output_folder results
 <p align="center"> 
-<img src="data/UnifiedQualityScore.scalar_violin.skintone_lwmdd_0.075.png" width="50%">
+<img src="data/FRLL-full-corr-labels-260723_UnifiedQualityScore.mapped_violin.skintone_ftadd_1.000.png" width="50%">
 </p>
 <p align="center"> 
-<img src="data/UnifiedQualityScore.scalar_cumulative.skintone_mdgdd_0.302.png" width="50%">
+<img src="data/FRLL-full-corr-labels-260723_UnifiedQualityScore.mapped_cumulative.skintone_mdgdd_0.117.png" width="50%">
 </p>
 
 ## Violin plots and cumulative distribution plots
