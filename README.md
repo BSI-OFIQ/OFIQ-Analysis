@@ -1,10 +1,10 @@
 # OFIQ-Analysis on Demographic Variability 
 
-This script creates violinplots for quality measures defined in ISO/IEC 29794-5 [1] and investigates the demographic variability (DV) across different demographic groups. The DV is measured with the mean discard gap (MDG-DD) and the low weighted mean (LWM-DD) as demographic differential metrics. Moreover the script computes quality measure thresholds for all quality components according to the percentiles of the data.
+This script creates violinplots for quality measures defined in ISO/IEC 29794-5 [1] and investigates the demographic variability (DV) across different demographic groups. The DV is measured with the Mean Discard Gap (MDG-DD) and the Failure To Acquire (FTA-DD) as demographic differential metrics. Moreover the script computes quality measure thresholds for all quality components according to the percentiles of the data.
 
-Further the purpose of the script is to produce violinplots including associated LWM-DD values, cumulative distribution plots including associated MDG-DD for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [3].
+Further the purpose of the script is to produce violinplots including associated FTA-DD values, cumulative distribution plots including associated MDG-DD for the development of the technical report ISO/IEC TR 25722 [2]. The intention is that contributions report the DV on operational data and appear in a harmonised and standardised fashion. An example is the recent contribution to ISO/IEC TR 25722  by Utcke et al. [4].
 
-This script will be contributed to ISO/IEC 29794-1 and will eventually become part of that standard.
+This script is referenced in ISO/IEC 29794-1 and will eventually become part of that standard [3].
 
 ## Example data
 
@@ -12,7 +12,7 @@ Example data files can be found in the subfolder data.
 
 ## Getting started
 
-Note: In order to process the CSV file with quality measures, the header of the CSV must follow the convention of OFIQ 1.2.0 containing the suffix .native and .scalar. In order to get started with older CSV-files you can copy the new header from the file corr-lables.scv in the subfolder data.
+Note: In order to process the CSV file with quality measures, the header of the CSV must follow the convention of OFIQ 1.2.0 containing the suffix .native and .mapped. In order to get started with older CSV-files you can copy the new header from the file corr-lables.csv in the subfolder data.
 
 ## Usage: 
 
@@ -54,7 +54,7 @@ For *all* quality‑measure columns the five operational thresholds (0.1 %, 1�
 
 ## Demographic differential
 
-As metric to assess the demographic differential (i.e. the "extent of difference in outcome of a biometric system across socially recognized sectors of the population"), which has been defined in ISO/IEC 2382-37 [5] the script computes the Mean Discard Gap Demographic Differential (MDG-DD) as well as the Low Weighted Mean Demographic Differential (LWM-DD) score both with a lower is better semantic. The MDG-DD quantifies the gap between the cumulative distribution plots. The LWM-DD follows the approach from Doersch et al. [6].
+This script implements metrics to assess the demographic differential (i.e. the "extent of difference in outcome of a biometric system across socially recognized sectors of the population"), which has been defined in ISO/IEC 2382-37 [5]. The script computes the Mean Discard Gap Demographic Differential (MDG-DD) as well as the failure to acquire (FTA-DD) score both with a lower is better semantic. The MDG-DD quantifies the gap between the cumulative distribution plots and follows the approach from Doersch et al. [6]. The FTA-DD measures demographic variability at a fixed operational quality threshold and is computed with the Gini coefficient. Both MDG-DD and FTA-DD are defined in ISO/IEC CD 29794-1 ISO/IEC 29794-1 [3].
 
 ## References
 
