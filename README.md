@@ -20,7 +20,7 @@ python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --m
 
 ## Example calls and results
 
-- python DV-OFIQ-stats-with-plots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260805.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260805.csv --variable gender --measure UnifiedQualityScore.mapped --color true --output_folder results
 <p align="center"> 
 <img src="data/ONOT-OFIQ-Values-UC1-corr-labels-260805_UnifiedQualityScore.mapped_violin.gender_ftadd_1.000.png" width="50%">
 </p>
@@ -28,15 +28,15 @@ python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --m
 <img src="data/ONOT-OFIQ-Values-UC1-corr-labels-260805_UnifiedQualityScore.mapped_cumulative.gender_mdgdd_0.106.png" width="50%">
 </p>
 
-- python DV-OFIQ-stats-with-plots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv Multi-PIE-glasses-corr-lables-260723.csv --variable glasses --measure LuminanceMean.mapped --color true --output_folder results
 <p align="center"> 
-<img src="data/LuminanceMean.scalar_violin.glasses_lwmdd_0.009.png" width="50%">
+<img src="data/Multi-PIE-glasses-corr-lables-260723_LuminanceMean.mapped_violin.glasses_ftadd_1.000.png" width="50%">
 </p>
 <p align="center"> 
-<img src="data/LuminanceMean.scalar_cumulative.glasses_mdgdd_0.114.png" width="50%">
+<img src="data/Multi-PIE-glasses-corr-lables-260723_LuminanceMean.mapped_cumulative.glasses_mdgdd_0.047.png" width="50%">
 </p>
 
-- python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv FRLL-full-corr-labels-260217.csv --variable skintone --measure UnifiedQualityScore.mapped --color true --output_folder results
 <p align="center"> 
 <img src="data/UnifiedQualityScore.scalar_violin.skintone_lwmdd_0.075.png" width="50%">
 </p>
