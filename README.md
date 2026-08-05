@@ -20,12 +20,12 @@ python DV-OFIQ-stats-with-plots.py --input_csv INPUT_CSV --variable VARIABLE --m
 
 ## Example calls and results
 
-- python DV-OFIQ-stats-with-plots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260217.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
+- python DV-OFIQ-stats-with-plots.py --input_csv ONOT-OFIQ-Values-UC1-corr-labels-260805.csv --variable gender --measure UnifiedQualityScore.scalar --color true --output_folder results
 <p align="center"> 
-<img src="data/UnifiedQualityScore.scalar_violin.gender_lwmdd_0.151.png" width="50%">
+<img src="data/ONOT-OFIQ-Values-UC1-corr-labels-260805_UnifiedQualityScore.mapped_violin.gender_ftadd_1.000.png" width="50%">
 </p>
 <p align="center"> 
-<img src="data/UnifiedQualityScore.scalar_cumulative.gender_mdgdd_0.190.png" width="50%">
+<img src="data/ONOT-OFIQ-Values-UC1-corr-labels-260805_UnifiedQualityScore.mapped_cumulative.gender_mdgdd_0.106.png" width="50%">
 </p>
 
 - python DV-OFIQ-stats-with-plots.py --input_csv Multi-PIE-glasses-corr-lables-260217.csv --variable glasses --measure LuminanceMean.scalar --color true --output_folder results
